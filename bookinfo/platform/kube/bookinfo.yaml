@@ -79,7 +79,7 @@ spec:
         ports:
         - containerPort: 9080
         securityContext:
-          runAsUser: 1000
+          runAsUser: 1000700000
 ---
 ##################################################################################################
 # Ratings service
@@ -134,7 +134,7 @@ spec:
         ports:
         - containerPort: 9080
         securityContext:
-          runAsUser: 1000
+          runAsUser: 1000700000
 ---
 ##################################################################################################
 # Reviews service
@@ -197,7 +197,7 @@ spec:
         - name: wlp-output
           mountPath: /opt/ibm/wlp/output
         securityContext:
-          runAsUser: 1000
+          runAsUser: 1000700000
       volumes:
       - name: wlp-output
         emptyDir: {}
@@ -241,7 +241,7 @@ spec:
         - name: wlp-output
           mountPath: /opt/ibm/wlp/output
         securityContext:
-          runAsUser: 1000
+          runAsUser: 1000700000
       volumes:
       - name: wlp-output
         emptyDir: {}
@@ -285,7 +285,7 @@ spec:
         - name: wlp-output
           mountPath: /opt/ibm/wlp/output
         securityContext:
-          runAsUser: 1000
+          runAsUser: 1000700000
       volumes:
       - name: wlp-output
         emptyDir: {}
@@ -348,7 +348,7 @@ spec:
         - name: tmp
           mountPath: /tmp
         securityContext:
-          runAsUser: 1000
+          runAsUser: 1000700000
       volumes:
       - name: tmp
         emptyDir: {}
